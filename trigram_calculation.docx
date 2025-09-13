@@ -1,0 +1,30 @@
+Trigram Model Probability Calculation
+
+Question: Compute P("I love NLP") for a trigram model
+
+Given Probabilities:
+• P(I) = 0.2
+• P(love | I) = 0.4
+• P(NLP | I, love) = 0.5
+
+Solution:
+
+For a trigram model, the probability of a sequence of words is calculated using the chain rule of probability:
+
+P("I love NLP") = P(I) × P(love | I) × P(NLP | I, love)
+
+Substituting the given values:
+
+P("I love NLP") = 0.2 × 0.4 × 0.5
+P("I love NLP") = 0.04
+
+Answer: P("I love NLP") = 0.04
+
+Explanation:
+The trigram model calculates the probability of a word sequence by multiplying the individual conditional probabilities. This follows the chain rule where each word's probability depends on the previous words in the sequence.
+
+• P(I) = 0.2 represents the probability of the word "I" occurring at the beginning
+• P(love | I) = 0.4 represents the probability of "love" given that "I" precedes it
+• P(NLP | I, love) = 0.5 represents the probability of "NLP" given that "I love" precedes it
+
+The final probability of 0.04 (4%) indicates the likelihood of observing this specific three-word sequence according to the given trigram model.
